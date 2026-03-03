@@ -1,0 +1,76 @@
+/* * seleccts every element in the html file */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box sizing border box basically means that the element is conatined within the perimetersof the box. */
+    box-sizing: border-box;
+}
+
+
+h1, h2 {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    text-emphasis: ";";
+    text-align: center;
+}
+
+body {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+    /* This turns very element in the body container into a flexible element */
+    display: flex;
+
+    flex-direction: column;
+    gap: 24px;
+    padding: 14px;
+    
+    /* Sets the minimum height of the class 100vh means 100% of the viewing space*/
+    min-height: 100vh;
+}
+
+form, section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 800px;
+
+    /* margins on the vertical axis and horizontal axis (y,x) respectively. */
+    /* This means that when we reach a certain width, it'll just self-center.*/
+    margin: 0 auto;
+    
+}
+
+form textarea{
+
+    /* Removes the textarea's property to be resized manually using the bottom right grabber */
+    resize: none;
+
+        /* Makes the textarea width occupy 100% of the parent element */
+    width: 100%;
+    
+    min-height: 60px;
+    padding: 14px;
+
+}
+
+form button {
+
+    /* Note that padding buffs out the widget by increasing its size and making it bigger essentially. */
+    padding: 8px;
+    
+    /* Makes it so that the cursor turns into a pointer when it is hovered above the widget */
+    cursor: pointer;
+
+    
+}
