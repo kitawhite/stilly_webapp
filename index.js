@@ -17,4 +17,8 @@ function addTodo() {
     todolist.push(todo)
 }
 
+function updateUI() {
+    return
+}
+
 addbutton.addEventListener('click', addTodo)

@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Welcome to Still In Love's Bedroom</h1>
-    <form>
+    <form onsubmit="return false">
         <textarea placeholder="What's your name?"></textarea>
-        <button>
+        <button id = "AddButton">
             <p>
                 Enter!
             </p>
@@ -36,6 +37,14 @@
                     Pat Still In Love on the head
                     Pat Still In Love on the head
                 </p>
+                <div class = "ButtonContainer">
+                    <button class = "ButtonIcon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class = "ButtonIcon">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
             </div>
             <div class = TodoContainer>
                 <div class = "Todo">
@@ -45,8 +54,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
 
 </body>
+
+<script src = "index.js">
+
+</script>
+
 </html>
